@@ -1,6 +1,22 @@
 import os
 import datetime 
 
+#TODO: Criar tela de quantidade de assentos.
+#       Usar mesmo layout das telas do sistema.
+#       Deve apresentar a quantidade atual de assentos.
+#       Permitir alterar para entre 30 e 80 assentos por ônibus.
+#       Mesmos comandos para voltar e fechar.
+
+#TODO: Criar tela de monetário.
+#       Usar mesmo layout das telas do sistema.
+#       Deve apresentar em R$.
+#       Deve apresentar o valor atual (default = 5,20).
+#       Deve apresentar total de vendas para onibus atual.
+#       Deve apresentar total de vendas geral.
+#       Permitir alteracao do valor da passagem.
+#       Mesmos comandos para voltar e fechar.
+
+
 # 0 = menu
 # 1 = menu compra
 # 2 = Alterar quantidade de assentos
@@ -42,9 +58,6 @@ def menu():
     if option.lower() == 'x':
         os.system('clear')
         exit()
-    else:
-        os.system('clear')
-        mensagem = 'opcao invalida'
 
     if option.isnumeric():
         if option == "1":
@@ -59,6 +72,9 @@ def menu():
             mensagem = 'Tela do Monetario nao implementada'
         else:
             mensagem = 'Tela inexistente'
+    else:
+        os.system('clear')
+        mensagem = 'opcao invalida'
 
 def menu_compra():
 
