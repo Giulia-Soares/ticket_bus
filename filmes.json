@@ -1,0 +1,12 @@
+{
+    "Harry Potter e a pedra filosofal": {
+        "ano": 2001,
+        "diretor": "David Yale",
+        "bilheteria": 10000
+    },
+    "Harry Potter e a camara secreta": {
+        "ano": 2002,
+        "diretor": "David Yale",
+        "bilheteria": 10000
+    }
+}
